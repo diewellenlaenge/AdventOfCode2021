@@ -14,4 +14,6 @@ private:
 	virtual EErrorCode CleanUp_SecondPart() override;
 
 	static std::string const sm_inputFilePath;
+
+	std::vector<std::string> lines_;
 };
