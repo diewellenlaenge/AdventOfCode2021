@@ -11,12 +11,19 @@ std::string const CChallenge_N::sm_inputFilePath = "Inputs/Input_Challenge_N.txt
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 EErrorCode CChallenge_N::SetUp_FirstPart()
 {
+#define FIRSTPART_SETUP_VERSION 1
+
 	std::vector<std::string> lines;
 	EErrorCode const readErrorCode = FileHelper::ReadLines(sm_inputFilePath, lines);
 	if (readErrorCode != EErrorCode::Success)
 	{
 		return readErrorCode;
 	}
+
+	// version 1: 
+#if FIRSTPART_SETUP_VERSION == 1
+
+#endif
 
 	return EErrorCode::NotImplemented;
 }
@@ -43,12 +50,19 @@ EErrorCode CChallenge_N::CleanUp_FirstPart()
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 EErrorCode CChallenge_N::SetUp_SecondPart()
 {
+#define SECONDPART_SETUP_VERSION 1
+
 	std::vector<std::string> lines;
 	EErrorCode const readErrorCode = FileHelper::ReadLines(sm_inputFilePath, lines);
 	if (readErrorCode != EErrorCode::Success)
 	{
 		return readErrorCode;
 	}
+
+	// version 1: 
+#if SECONDPART_SETUP_VERSION == 1
+
+#endif
 
 	return EErrorCode::NotImplemented;
 }
