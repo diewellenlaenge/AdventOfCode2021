@@ -15,7 +15,6 @@ private:
 
 	static std::string const sm_inputFilePath;
 
-	std::vector<std::string> lines_;
-	std::size_t count_;
 	std::vector<int> depths_;
+	std::size_t count_;
 };
