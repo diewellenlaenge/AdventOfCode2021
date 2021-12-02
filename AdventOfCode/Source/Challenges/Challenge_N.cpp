@@ -22,6 +22,13 @@ EErrorCode CChallenge_N::SetUp_FirstPart()
 
 EErrorCode CChallenge_N::Run_FirstPart()
 {
+#define FIRSTPART_VERSION 1
+
+	// version 1: 
+#if FIRSTPART_VERSION == 1
+
+#endif
+
 	return EErrorCode::NotImplemented;
 }
 
@@ -46,6 +53,13 @@ EErrorCode CChallenge_N::SetUp_SecondPart()
 
 EErrorCode CChallenge_N::Run_SecondPart()
 {
+#define SECONDPART_VERSION 1
+
+	// version 1: 
+#if SECONDPART_VERSION == 1
+
+#endif
+
 	return EErrorCode::NotImplemented;
 }
 
