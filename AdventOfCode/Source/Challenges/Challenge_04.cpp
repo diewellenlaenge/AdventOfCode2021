@@ -59,7 +59,7 @@ EErrorCode CChallenge_04::SetUp_FirstPart()
 	return EErrorCode::Success;
 }
 
-bool CheckBoard(const board_type& board, int& sumUnmarked) {
+static bool CheckBoard(const board_type& board, int& sumUnmarked) {
 	sumUnmarked = 0;
 
 	// a board can never win if its disabled (vector size higher than actual board size)

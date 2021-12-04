@@ -38,7 +38,7 @@ EErrorCode CChallenge_03::SetUp_FirstPart()
 }
 
 template<std::ranges::input_range T>
-std::size_t GetParity(T data, int idx)
+static std::size_t GetParity(T data, int idx)
 {
 	std::size_t count{ 0 };
 
