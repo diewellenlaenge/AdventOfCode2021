@@ -141,8 +141,7 @@ EErrorCode CChallenge_03::Run_SecondPart()
 			auto common = parity >= treshold;
 
 			std::erase_if(oxygenData,
-				[this, common, idx](const auto number)
-				{
+				[this, common, idx](const auto number) {
 					return (!common && number & (1 << idx))
 						|| (common && !(number & (1 << idx)));
 				});
@@ -155,8 +154,7 @@ EErrorCode CChallenge_03::Run_SecondPart()
 			auto common = parity >= treshold;
 
 			std::erase_if(scrubberData,
-				[this, common, idx](const auto number)
-				{
+				[this, common, idx](const auto number) {
 					return (!common && !(number & (1 << idx)))
 						|| (common && number & (1 << idx));
 				});
