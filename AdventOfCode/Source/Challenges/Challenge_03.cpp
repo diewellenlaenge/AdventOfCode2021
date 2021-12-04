@@ -157,8 +157,8 @@ EErrorCode CChallenge_03::Run_SecondPart()
 			std::erase_if(scrubberData,
 				[this, common, idx](const auto number)
 				{
-						return (!common && !(number & (1 << idx)))
-							|| (common && number & (1 << idx));
+					return (!common && !(number & (1 << idx)))
+						|| (common && number & (1 << idx));
 				});
 		}
 	}
