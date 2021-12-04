@@ -10,5 +10,6 @@ enum class EErrorCode
 	NotImplemented,
 	FileNotFound,
 	FileEmpty,
-	Undefined
+	Undefined,
+	Failure,
 };
