@@ -5,20 +5,8 @@
 #include <ranges>
 #include <cassert>
 
-// :harold:
-// https://stackoverflow.com/a/8625010
-constexpr std::size_t isqrt_impl
-(std::size_t sq, std::size_t dlt, std::size_t value) {
-	return sq <= value ?
-		isqrt_impl(sq + dlt, dlt + 2, value) : (dlt >> 1) - 1;
-}
-
-constexpr std::size_t isqrt(std::size_t value) {
-	return isqrt_impl(1, 3, value);
-}
-
-constexpr auto board_size = 25;
-constexpr auto board_length = isqrt(board_size); // 5
+constexpr auto board_length = 5;
+constexpr auto board_size = board_length * board_length;
 
 
 
