@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <ranges>
 #include <cassert>
+#include <array>
 
 constexpr auto board_length = 5;
 constexpr auto board_size = board_length * board_length;

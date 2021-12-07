@@ -2,8 +2,6 @@
 
 #include "Common/Challenge.h"
 
-#include <array>
-
 using board_type = std::vector<int>;
 
 class CChallenge_04 : public CChallenge
